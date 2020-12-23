@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #c4a4d4;
+    color: (var(--black-color))
+    font-family: 'Source Code Pro', monospace;
+}
+
+:root {
+    --primary-color: #351898;
+    --black-color: #111;
+    --secondary-color: #F7930A;
+}
+
+.btn{
+ background-color: var(--secondary-color);
+ color: white;
+ border: none;
+ box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+ cursor: pointer;
+ font-size: 0.6rem;
+ font-weight: 600;
+ padding: 15px 25px;
+border-radius: 5px;
+text-transform: uppercase;
+letter-spacing: 1px;
+}
+
+h2 {
+    border-bottom: 2px solid #111;
+    color: var(--black-color);
+    display: inline-block;
+}
+
+.container {
+    padding: 20px;
+    margin: 0 auto !important;
+    max-width: 100%;
+    width: 800px;
+}
+.text-center{
+    text-align: center;
+   
+}
+
+.meal {
+    
+    background-color: white;
+    border-radius: 5px;
+     display: flex;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+}
+
+.meal-img {
+    overflow: hidden;
+    border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    flex: 1;
+}
+.meal-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.meal-details {
+    position: relative;
+    flex: 2;
+    padding: 20px;
+}
+
+.meal-title {
+    color: var(--primary-color);
+    margin: 0 0 20px;
+}
+.meal-instructions {
+    font-size: 14px;
+}
+
+.meal-info {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.meal-info li {
+    color: grey;
+    font-size: 14px;
+    font-weight: 300;
+    margin-right: 50px;
+}
+
+.meal-info li strong {
+    color: var(--primary-color);
+    font-size: 16px;
+    display: block;
+}
+
+.meal-details .btn{
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+}
